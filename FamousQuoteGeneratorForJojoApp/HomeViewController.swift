@@ -12,6 +12,8 @@ class HomeViewController: UIViewController {
     
     // MARK: - Properties
     
+    var dataArray = ["jojo_1", "jojo_2", "jojo_3","jojo_4",
+                     "jojo_5", "jojo_6", "jojo_7", "jojo_8", "favorite"]
     
     // MARK: - IBOutlets
     
@@ -33,11 +35,42 @@ class HomeViewController: UIViewController {
         // デリゲートを適用します
         collectionView.delegate = self
         // カスタムセルを登録
-        collectionView.register(UINib(nibName: "QuoteCollectionViewCell", bundle: nil),
+        collectionView.register(UINib(nibName: "HomeCollectionViewCell", bundle: nil),
                                 forCellWithReuseIdentifier: "Cell1")
     }
 }
 
+// MARK: - UICollectionViewDelegate
+
+extension HomeViewController: UICollectionViewDelegate {
+    /// セルのタップを伝えるメソッド
+    func collectionView(_ collectionView: UICollectionView,
+                        didSelectItemAt indexPath: IndexPath) {
+        // タップされた時の処理を記述
+        switch indexPath.row {
+        case 0:
+            print("１部")
+        case 1:
+            print("２部")
+        case 2:
+            print("３部")
+        case 3:
+            print("４部")
+        case 4:
+            print("５部")
+        case 5:
+            print("６部")
+        case 6:
+            print("７部")
+        case 7:
+            print("８部")
+        case 8:
+            print("お気に入り")
+        default:
+            break
+        }
+    }
+}
 
 
 // MARK: - UICollectionViewDataSource
@@ -46,15 +79,15 @@ extension HomeViewController: UICollectionViewDataSource {
     /// セルの数を決めるメソッド
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return dataArray.count
     }
     
     /// セルの内容設定メソッド
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell1",
-                                                      for: indexPath)as! QuoteCollectionViewCell
-        cell.backgroundColor = UIColor.lightGray
+                                                      for: indexPath)as! HomeCollectionViewCell
+        cell.imageView.image = UIImage(named: dataArray[indexPath.item])
         return cell
     }
 }
@@ -76,5 +109,9 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         
         // 正方形で返すためにwidth,heightを同じにする
         return CGSize(width: cellSize, height: cellSize)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+         return 30.0 // 行間
     }
 }

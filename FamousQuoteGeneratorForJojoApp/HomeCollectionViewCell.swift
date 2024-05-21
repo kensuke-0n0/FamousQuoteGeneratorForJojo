@@ -7,9 +7,9 @@
 
 import UIKit
 
-class QuoteCollectionViewCell: UICollectionViewCell {
+class HomeCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var ImageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
