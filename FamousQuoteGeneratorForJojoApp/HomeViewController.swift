@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
     
     // MARK: - Properties
     
-    var dataArray = ["jojo_1", "jojo_2", "jojo_3","jojo_4",
+    let dataArray = ["jojo_1", "jojo_2", "jojo_3","jojo_4",
                      "jojo_5", "jojo_6", "jojo_7", "jojo_8", "favorite"]
     
     // MARK: - IBOutlets
