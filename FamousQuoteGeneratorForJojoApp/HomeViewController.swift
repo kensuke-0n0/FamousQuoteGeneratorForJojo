@@ -49,23 +49,32 @@ extension HomeViewController: UICollectionViewDelegate {
         // タップされた時の処理を記述
         switch indexPath.row {
         case 0:
-            print("１部")
+            let quote1VC = Quote1ViewController()
+                    navigationController?.pushViewController(quote1VC, animated: true)
         case 1:
-            print("２部")
+            let quote2VC = Quote2ViewController()
+                    navigationController?.pushViewController(quote2VC, animated: true)
         case 2:
-            print("３部")
+            let quote3VC = Quote3ViewController()
+                    navigationController?.pushViewController(quote3VC, animated: true)
         case 3:
-            print("４部")
+            let quote4VC = Quote4ViewController()
+                    navigationController?.pushViewController(quote4VC, animated: true)
         case 4:
-            print("５部")
+            let quote5VC = Quote5ViewController()
+                    navigationController?.pushViewController(quote5VC, animated: true)
         case 5:
-            print("６部")
+            let quote6VC = Quote6ViewController()
+                    navigationController?.pushViewController(quote6VC, animated: true)
         case 6:
-            print("７部")
+            let quote7VC = Quote7ViewController()
+                    navigationController?.pushViewController(quote7VC, animated: true)
         case 7:
-            print("８部")
+            let quote8VC = Quote8ViewController()
+                    navigationController?.pushViewController(quote8VC, animated: true)
         case 8:
-            print("お気に入り")
+            let favoriteVC = FavoriteViewController()
+                    navigationController?.pushViewController(favoriteVC, animated: true)
         default:
             break
         }
