@@ -36,7 +36,7 @@ class HomeViewController: UIViewController {
         collectionView.delegate = self
         // カスタムセルを登録
         collectionView.register(UINib(nibName: "HomeCollectionViewCell", bundle: nil),
-                                forCellWithReuseIdentifier: "Cell1")
+                                forCellWithReuseIdentifier: "Cell")
     }
 }
 
@@ -85,7 +85,7 @@ extension HomeViewController: UICollectionViewDataSource {
     /// セルの内容設定メソッド
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell1",
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell",
                                                       for: indexPath)as! HomeCollectionViewCell
         cell.imageView.image = UIImage(named: dataArray[indexPath.item])
         return cell
