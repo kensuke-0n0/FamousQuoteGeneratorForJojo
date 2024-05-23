@@ -7,23 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF8657CF2BFCBD9F0025C341 /* Quote1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8657CD2BFCBD9F0025C341 /* Quote1ViewController.swift */; };
+		AF8657D02BFCBD9F0025C341 /* Quote1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8657CE2BFCBD9F0025C341 /* Quote1ViewController.xib */; };
+		AF8657D32BFCBE0F0025C341 /* Quote2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8657D12BFCBE0F0025C341 /* Quote2ViewController.swift */; };
+		AF8657D42BFCBE0F0025C341 /* Quote2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8657D22BFCBE0F0025C341 /* Quote2ViewController.xib */; };
+		AF8657D72BFCBE2A0025C341 /* Quote3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8657D52BFCBE2A0025C341 /* Quote3ViewController.swift */; };
+		AF8657D82BFCBE2A0025C341 /* Quote3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8657D62BFCBE2A0025C341 /* Quote3ViewController.xib */; };
+		AF8657DB2BFCBE460025C341 /* Quote4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8657D92BFCBE460025C341 /* Quote4ViewController.swift */; };
+		AF8657DC2BFCBE460025C341 /* Quote4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8657DA2BFCBE460025C341 /* Quote4ViewController.xib */; };
+		AF8657DF2BFCBE5B0025C341 /* Quote5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8657DD2BFCBE5B0025C341 /* Quote5ViewController.swift */; };
+		AF8657E02BFCBE5B0025C341 /* Quote5ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8657DE2BFCBE5B0025C341 /* Quote5ViewController.xib */; };
+		AF8657E32BFCBE750025C341 /* Quote6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8657E12BFCBE750025C341 /* Quote6ViewController.swift */; };
+		AF8657E42BFCBE750025C341 /* Quote6ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8657E22BFCBE750025C341 /* Quote6ViewController.xib */; };
+		AF8657E72BFCBE8B0025C341 /* Quote7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8657E52BFCBE8B0025C341 /* Quote7ViewController.swift */; };
+		AF8657E82BFCBE8B0025C341 /* Quote7ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8657E62BFCBE8B0025C341 /* Quote7ViewController.xib */; };
+		AF8657EB2BFCBEAA0025C341 /* Quote8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8657E92BFCBEAA0025C341 /* Quote8ViewController.swift */; };
+		AF8657EC2BFCBEAA0025C341 /* Quote8ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8657EA2BFCBEAA0025C341 /* Quote8ViewController.xib */; };
+		AF8657EF2BFCBF240025C341 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8657ED2BFCBF240025C341 /* FavoriteViewController.swift */; };
+		AF8657F02BFCBF240025C341 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8657EE2BFCBF240025C341 /* FavoriteViewController.xib */; };
 		AFC3B9E82BF112C8005FCD37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3B9E72BF112C8005FCD37 /* AppDelegate.swift */; };
 		AFC3B9EA2BF112C8005FCD37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3B9E92BF112C8005FCD37 /* SceneDelegate.swift */; };
-		AFC3B9EC2BF112C8005FCD37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3B9EB2BF112C8005FCD37 /* ViewController.swift */; };
+		AFC3B9EC2BF112C8005FCD37 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3B9EB2BF112C8005FCD37 /* HomeViewController.swift */; };
 		AFC3B9EF2BF112C8005FCD37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC3B9ED2BF112C8005FCD37 /* Main.storyboard */; };
 		AFC3B9F12BF112CB005FCD37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC3B9F02BF112CB005FCD37 /* Assets.xcassets */; };
 		AFC3B9F42BF112CB005FCD37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC3B9F22BF112CB005FCD37 /* LaunchScreen.storyboard */; };
+		AFCD546A2BF7AAEE000D9AC2 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCD54682BF7AAEE000D9AC2 /* HomeCollectionViewCell.swift */; };
+		AFCD546B2BF7AAEE000D9AC2 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFCD54692BF7AAEE000D9AC2 /* HomeCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF8657CD2BFCBD9F0025C341 /* Quote1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote1ViewController.swift; sourceTree = "<group>"; };
+		AF8657CE2BFCBD9F0025C341 /* Quote1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Quote1ViewController.xib; sourceTree = "<group>"; };
+		AF8657D12BFCBE0F0025C341 /* Quote2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote2ViewController.swift; sourceTree = "<group>"; };
+		AF8657D22BFCBE0F0025C341 /* Quote2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Quote2ViewController.xib; sourceTree = "<group>"; };
+		AF8657D52BFCBE2A0025C341 /* Quote3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote3ViewController.swift; sourceTree = "<group>"; };
+		AF8657D62BFCBE2A0025C341 /* Quote3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Quote3ViewController.xib; sourceTree = "<group>"; };
+		AF8657D92BFCBE460025C341 /* Quote4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote4ViewController.swift; sourceTree = "<group>"; };
+		AF8657DA2BFCBE460025C341 /* Quote4ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Quote4ViewController.xib; sourceTree = "<group>"; };
+		AF8657DD2BFCBE5B0025C341 /* Quote5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote5ViewController.swift; sourceTree = "<group>"; };
+		AF8657DE2BFCBE5B0025C341 /* Quote5ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Quote5ViewController.xib; sourceTree = "<group>"; };
+		AF8657E12BFCBE750025C341 /* Quote6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote6ViewController.swift; sourceTree = "<group>"; };
+		AF8657E22BFCBE750025C341 /* Quote6ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Quote6ViewController.xib; sourceTree = "<group>"; };
+		AF8657E52BFCBE8B0025C341 /* Quote7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote7ViewController.swift; sourceTree = "<group>"; };
+		AF8657E62BFCBE8B0025C341 /* Quote7ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Quote7ViewController.xib; sourceTree = "<group>"; };
+		AF8657E92BFCBEAA0025C341 /* Quote8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote8ViewController.swift; sourceTree = "<group>"; };
+		AF8657EA2BFCBEAA0025C341 /* Quote8ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Quote8ViewController.xib; sourceTree = "<group>"; };
+		AF8657ED2BFCBF240025C341 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		AF8657EE2BFCBF240025C341 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
 		AFC3B9E42BF112C8005FCD37 /* FamousQuoteGeneratorForJojoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamousQuoteGeneratorForJojoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC3B9E72BF112C8005FCD37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFC3B9E92BF112C8005FCD37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AFC3B9EB2BF112C8005FCD37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFC3B9EB2BF112C8005FCD37 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AFC3B9EE2BF112C8005FCD37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFC3B9F02BF112CB005FCD37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFC3B9F32BF112CB005FCD37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFC3B9F52BF112CB005FCD37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCD54682BF7AAEE000D9AC2 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		AFCD54692BF7AAEE000D9AC2 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +98,31 @@
 			children = (
 				AFC3B9E72BF112C8005FCD37 /* AppDelegate.swift */,
 				AFC3B9E92BF112C8005FCD37 /* SceneDelegate.swift */,
-				AFC3B9EB2BF112C8005FCD37 /* ViewController.swift */,
+				AFC3B9EB2BF112C8005FCD37 /* HomeViewController.swift */,
 				AFC3B9ED2BF112C8005FCD37 /* Main.storyboard */,
 				AFC3B9F02BF112CB005FCD37 /* Assets.xcassets */,
 				AFC3B9F22BF112CB005FCD37 /* LaunchScreen.storyboard */,
 				AFC3B9F52BF112CB005FCD37 /* Info.plist */,
+				AFCD54682BF7AAEE000D9AC2 /* HomeCollectionViewCell.swift */,
+				AFCD54692BF7AAEE000D9AC2 /* HomeCollectionViewCell.xib */,
+				AF8657CD2BFCBD9F0025C341 /* Quote1ViewController.swift */,
+				AF8657CE2BFCBD9F0025C341 /* Quote1ViewController.xib */,
+				AF8657D12BFCBE0F0025C341 /* Quote2ViewController.swift */,
+				AF8657D22BFCBE0F0025C341 /* Quote2ViewController.xib */,
+				AF8657D52BFCBE2A0025C341 /* Quote3ViewController.swift */,
+				AF8657D62BFCBE2A0025C341 /* Quote3ViewController.xib */,
+				AF8657D92BFCBE460025C341 /* Quote4ViewController.swift */,
+				AF8657DA2BFCBE460025C341 /* Quote4ViewController.xib */,
+				AF8657DD2BFCBE5B0025C341 /* Quote5ViewController.swift */,
+				AF8657DE2BFCBE5B0025C341 /* Quote5ViewController.xib */,
+				AF8657E12BFCBE750025C341 /* Quote6ViewController.swift */,
+				AF8657E22BFCBE750025C341 /* Quote6ViewController.xib */,
+				AF8657E52BFCBE8B0025C341 /* Quote7ViewController.swift */,
+				AF8657E62BFCBE8B0025C341 /* Quote7ViewController.xib */,
+				AF8657E92BFCBEAA0025C341 /* Quote8ViewController.swift */,
+				AF8657EA2BFCBEAA0025C341 /* Quote8ViewController.xib */,
+				AF8657ED2BFCBF240025C341 /* FavoriteViewController.swift */,
+				AF8657EE2BFCBF240025C341 /* FavoriteViewController.xib */,
 			);
 			path = FamousQuoteGeneratorForJojoApp;
 			sourceTree = "<group>";
@@ -125,9 +185,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8657D42BFCBE0F0025C341 /* Quote2ViewController.xib in Resources */,
+				AF8657F02BFCBF240025C341 /* FavoriteViewController.xib in Resources */,
+				AF8657D02BFCBD9F0025C341 /* Quote1ViewController.xib in Resources */,
+				AF8657DC2BFCBE460025C341 /* Quote4ViewController.xib in Resources */,
 				AFC3B9F42BF112CB005FCD37 /* LaunchScreen.storyboard in Resources */,
+				AFCD546B2BF7AAEE000D9AC2 /* HomeCollectionViewCell.xib in Resources */,
+				AF8657E82BFCBE8B0025C341 /* Quote7ViewController.xib in Resources */,
 				AFC3B9F12BF112CB005FCD37 /* Assets.xcassets in Resources */,
+				AF8657E42BFCBE750025C341 /* Quote6ViewController.xib in Resources */,
+				AF8657E02BFCBE5B0025C341 /* Quote5ViewController.xib in Resources */,
 				AFC3B9EF2BF112C8005FCD37 /* Main.storyboard in Resources */,
+				AF8657EC2BFCBEAA0025C341 /* Quote8ViewController.xib in Resources */,
+				AF8657D82BFCBE2A0025C341 /* Quote3ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +208,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFC3B9EC2BF112C8005FCD37 /* ViewController.swift in Sources */,
+				AF8657D72BFCBE2A0025C341 /* Quote3ViewController.swift in Sources */,
+				AF8657DF2BFCBE5B0025C341 /* Quote5ViewController.swift in Sources */,
+				AFC3B9EC2BF112C8005FCD37 /* HomeViewController.swift in Sources */,
+				AFCD546A2BF7AAEE000D9AC2 /* HomeCollectionViewCell.swift in Sources */,
+				AF8657E32BFCBE750025C341 /* Quote6ViewController.swift in Sources */,
+				AF8657D32BFCBE0F0025C341 /* Quote2ViewController.swift in Sources */,
+				AF8657EB2BFCBEAA0025C341 /* Quote8ViewController.swift in Sources */,
 				AFC3B9E82BF112C8005FCD37 /* AppDelegate.swift in Sources */,
 				AFC3B9EA2BF112C8005FCD37 /* SceneDelegate.swift in Sources */,
+				AF8657EF2BFCBF240025C341 /* FavoriteViewController.swift in Sources */,
+				AF8657DB2BFCBE460025C341 /* Quote4ViewController.swift in Sources */,
+				AF8657E72BFCBE8B0025C341 /* Quote7ViewController.swift in Sources */,
+				AF8657CF2BFCBD9F0025C341 /* Quote1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +372,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65S5SNW79U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FamousQuoteGeneratorForJojoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -319,6 +400,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65S5SNW79U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FamousQuoteGeneratorForJojoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
