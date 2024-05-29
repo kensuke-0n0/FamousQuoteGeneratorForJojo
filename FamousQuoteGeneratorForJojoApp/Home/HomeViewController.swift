@@ -112,8 +112,8 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         // 横方向のスペース調整
         let horizontalSpace: CGFloat = 5
         
-        //セルのサイズを指定。画面上にセルを3つ表示させたいのであれば、デバイスの横幅を3分割した横幅　- セル間のスペース*4（セル間のスペースが4つあるため）
-        let cellSize: CGFloat = self.view.bounds.width / 3 - horizontalSpace * 4
+        //セルのサイズを指定。画面上にセルを3つ表示させたいのであれば、デバイスの横幅を3分割した横幅　- セル間のスペース*2（セル間のスペースが2つあるため）
+        let cellSize: CGFloat = collectionView.frame.width / 3 - horizontalSpace * 2
         
         // 正方形で返すためにwidth,heightを同じにする
         return CGSize(width: cellSize, height: cellSize)
