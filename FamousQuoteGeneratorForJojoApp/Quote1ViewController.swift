@@ -16,8 +16,9 @@ class Quote1ViewController: UIViewController {
     
     // MARK: - IBOutlets
     
+    //名言を表示させるラベル
     @IBOutlet weak var quoteLabel: UILabel!
-    
+    //キャラクター名を表示させるラベル
     @IBOutlet weak var characterLabel: UILabel!
     
     // MARK: - View Life-Cycle Methods
