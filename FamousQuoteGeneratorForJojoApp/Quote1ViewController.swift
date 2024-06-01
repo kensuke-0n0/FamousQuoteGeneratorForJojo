@@ -43,18 +43,18 @@ class Quote1ViewController: UIViewController {
     }
     
     // MARK: - Other Methods
-      
-       /// UIViewにグラデーションを追加する関数
-       private func configureGradientView(view: UIView) {
-           let color1 = UIColor(hex: "#08CF79")
-           let color2 = UIColor(hex: "#000000")
-           let gradientLayer = CAGradientLayer()
-           gradientLayer.frame = view.bounds
-           gradientLayer.colors = [color1.cgColor, color2.cgColor]
-           gradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
-           gradientLayer.endPoint = CGPoint(x: 0.5, y: 1)
-           
-           view.layer.insertSublayer(gradientLayer, at: 0)
-       }
+    
+    /// UIViewにグラデーションを追加する関数
+    private func configureGradientView(view: UIView) {
+        let color1 = UIColor(hex: "#08CF79")
+        let color2 = UIColor(hex: "#000000")
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = view.bounds
+        gradientLayer.colors = [color1.cgColor, color2.cgColor]
+        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 0.5, y: 1)
+        
+        view.layer.insertSublayer(gradientLayer, at: 0)
+    }
 }
 
