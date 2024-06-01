@@ -25,6 +25,8 @@
 		AF8657EC2BFCBEAA0025C341 /* Quote8ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8657EA2BFCBEAA0025C341 /* Quote8ViewController.xib */; };
 		AF8657EF2BFCBF240025C341 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8657ED2BFCBF240025C341 /* FavoriteViewController.swift */; };
 		AF8657F02BFCBF240025C341 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8657EE2BFCBF240025C341 /* FavoriteViewController.xib */; };
+		AFAA04852C02F03C00AD9F74 /* QuotesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA04842C02F03C00AD9F74 /* QuotesData.swift */; };
+		AFC33D822C0A1D13003B0E82 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC33D812C0A1D13003B0E82 /* UIColorExtension.swift */; };
 		AFC3B9E82BF112C8005FCD37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3B9E72BF112C8005FCD37 /* AppDelegate.swift */; };
 		AFC3B9EA2BF112C8005FCD37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3B9E92BF112C8005FCD37 /* SceneDelegate.swift */; };
 		AFC3B9EC2BF112C8005FCD37 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3B9EB2BF112C8005FCD37 /* HomeViewController.swift */; };
@@ -54,6 +56,8 @@
 		AF8657EA2BFCBEAA0025C341 /* Quote8ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Quote8ViewController.xib; sourceTree = "<group>"; };
 		AF8657ED2BFCBF240025C341 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		AF8657EE2BFCBF240025C341 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
+		AFAA04842C02F03C00AD9F74 /* QuotesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesData.swift; sourceTree = "<group>"; };
+		AFC33D812C0A1D13003B0E82 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		AFC3B9E42BF112C8005FCD37 /* FamousQuoteGeneratorForJojoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamousQuoteGeneratorForJojoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC3B9E72BF112C8005FCD37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFC3B9E92BF112C8005FCD37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				AF8657EA2BFCBEAA0025C341 /* Quote8ViewController.xib */,
 				AF8657ED2BFCBF240025C341 /* FavoriteViewController.swift */,
 				AF8657EE2BFCBF240025C341 /* FavoriteViewController.xib */,
+				AFAA04842C02F03C00AD9F74 /* QuotesData.swift */,
+				AFC33D812C0A1D13003B0E82 /* UIColorExtension.swift */,
 			);
 			path = FamousQuoteGeneratorForJojoApp;
 			sourceTree = "<group>";
@@ -210,8 +216,10 @@
 			files = (
 				AF8657D72BFCBE2A0025C341 /* Quote3ViewController.swift in Sources */,
 				AF8657DF2BFCBE5B0025C341 /* Quote5ViewController.swift in Sources */,
+				AFC33D822C0A1D13003B0E82 /* UIColorExtension.swift in Sources */,
 				AFC3B9EC2BF112C8005FCD37 /* HomeViewController.swift in Sources */,
 				AFCD546A2BF7AAEE000D9AC2 /* HomeCollectionViewCell.swift in Sources */,
+				AFAA04852C02F03C00AD9F74 /* QuotesData.swift in Sources */,
 				AF8657E32BFCBE750025C341 /* Quote6ViewController.swift in Sources */,
 				AF8657D32BFCBE0F0025C341 /* Quote2ViewController.swift in Sources */,
 				AF8657EB2BFCBEAA0025C341 /* Quote8ViewController.swift in Sources */,

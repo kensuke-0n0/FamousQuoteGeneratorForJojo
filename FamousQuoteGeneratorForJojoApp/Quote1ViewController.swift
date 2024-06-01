@@ -9,7 +9,66 @@ import UIKit
 
 class Quote1ViewController: UIViewController {
     
+    // MARK: - Properties
+
+    /// グラデーションの背景ビューをプロパティとして保持
+    let gradientView = UIView()
+    
+    // MARK: - IBOutlets
+    
+    @IBOutlet weak var quoteLabel: UILabel!
+    
+    @IBOutlet weak var characterLabel: UILabel!
+    
+    // MARK: - View Life-Cycle Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if QuotesData.quote1.first != nil {
+            quoteLabel.text = "名言生成ッ!!をタップ"
+            characterLabel.text = ""}
+        configureGradientView(view: self.view)
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        // グラデーションレイヤーのフレームを更新
+        if let gradientLayer = gradientView.layer.sublayers?.first as? CAGradientLayer {
+            gradientLayer.frame = gradientView.bounds
+        }
+        
+        // グラデーションビューを最背面に移動
+        self.view.sendSubviewToBack(gradientView)
+    }
+    
+    // MARK: - IBActions
+    
+    
+    @IBAction func favoriteButton(_ sender: Any) {
+    }
+    
+    @IBAction func generateButton(_ sender: Any) {
+        //ランダムに名言を設定
+        if let randomQuote = QuotesData.quote1.randomElement() {
+            quoteLabel.text = randomQuote.quote
+            characterLabel.text = randomQuote.characterName
+        }
+    }
+    
+    // MARK: - Other Methods
+      
+       /// UIViewにグラデーションを追加する関数
+       private func configureGradientView(view: UIView) {
+           let color1 = UIColor(hex: "#08CF79")
+           let color2 = UIColor(hex: "#000000")
+           let gradientLayer = CAGradientLayer()
+           gradientLayer.frame = view.bounds
+           gradientLayer.colors = [color1.cgColor, color2.cgColor]
+           gradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
+           gradientLayer.endPoint = CGPoint(x: 0.5, y: 1)
+           
+           view.layer.insertSublayer(gradientLayer, at: 0)
+       }
 }
+
