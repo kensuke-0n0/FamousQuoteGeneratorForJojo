@@ -31,17 +31,6 @@ class Quote1ViewController: UIViewController {
         configureGradientView(view: self.view)
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        // グラデーションレイヤーのフレームを更新
-        if let gradientLayer = gradientView.layer.sublayers?.first as? CAGradientLayer {
-            gradientLayer.frame = gradientView.bounds
-        }
-        
-        // グラデーションビューを最背面に移動
-        self.view.sendSubviewToBack(gradientView)
-    }
-    
     // MARK: - IBActions
     
     @IBAction func favoriteButton(_ sender: Any) {
