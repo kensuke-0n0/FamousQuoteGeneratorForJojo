@@ -10,9 +10,6 @@ import UIKit
 class Quote1ViewController: UIViewController {
     
     // MARK: - Properties
-
-    /// グラデーションの背景ビューをプロパティとして保持
-    let gradientView = UIView()
     
     // MARK: - IBOutlets
     
