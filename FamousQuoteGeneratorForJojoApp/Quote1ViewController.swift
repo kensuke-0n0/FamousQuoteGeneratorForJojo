@@ -44,7 +44,6 @@ class Quote1ViewController: UIViewController {
     
     // MARK: - IBActions
     
-    
     @IBAction func favoriteButton(_ sender: Any) {
     }
     
