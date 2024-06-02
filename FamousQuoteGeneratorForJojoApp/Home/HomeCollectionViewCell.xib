@@ -19,8 +19,7 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jojo_1" translatesAutoresizingMaskIntoConstraints="NO" id="nWG-nA-Rja">
                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="90" id="641-Yj-bSt"/>
-                            <constraint firstAttribute="height" constant="90" id="95c-sP-58o"/>
+                            <constraint firstAttribute="width" secondItem="nWG-nA-Rja" secondAttribute="height" multiplier="1:1" id="jTl-lo-tXu"/>
                         </constraints>
                     </imageView>
                 </subviews>
