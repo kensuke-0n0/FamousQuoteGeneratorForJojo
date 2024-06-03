@@ -9,8 +9,6 @@ import UIKit
 
 class Quote1ViewController: UIViewController {
     
-    // MARK: - Properties
-    
     // MARK: - IBOutlets
     
     /// 名言を表示させるラベル
@@ -45,7 +43,7 @@ class Quote1ViewController: UIViewController {
     // MARK: - Other Methods
     
     /// UIViewにグラデーションを追加する関数
-    private func configureGradientView(view: UIView) {
+    func configureGradientView(view: UIView) {
         let color1 = UIColor(hex: "#08CF79")
         let color2 = UIColor(hex: "#000000")
         let gradientLayer = CAGradientLayer()
