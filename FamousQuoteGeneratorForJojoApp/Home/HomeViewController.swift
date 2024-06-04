@@ -12,12 +12,12 @@ class HomeViewController: UIViewController {
     
     // MARK: - Properties
     
-    let dataArray = ["jojo_1", "jojo_2", "jojo_3","jojo_4",
-                     "jojo_5", "jojo_6", "jojo_7", "jojo_8", "favorite"]
+    private let dataArray = ["jojo_1", "jojo_2", "jojo_3","jojo_4",
+                             "jojo_5", "jojo_6", "jojo_7", "jojo_8", "favorite"]
     
     // MARK: - IBOutlets
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet private weak var collectionView: UICollectionView!
     
     // MARK: - View Life-Cycle Methods
     
@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
     
     // MARK: - Other Methods
     
-    func configureCollectionView() {
+    private func configureCollectionView() {
         // データソースを適用します
         collectionView.dataSource = self
         // デリゲートを適用します
@@ -50,31 +50,31 @@ extension HomeViewController: UICollectionViewDelegate {
         switch indexPath.row {
         case 0:
             let quote1VC = Quote1ViewController()
-                    navigationController?.pushViewController(quote1VC, animated: true)
+            navigationController?.pushViewController(quote1VC, animated: true)
         case 1:
             let quote2VC = Quote2ViewController()
-                    navigationController?.pushViewController(quote2VC, animated: true)
+            navigationController?.pushViewController(quote2VC, animated: true)
         case 2:
             let quote3VC = Quote3ViewController()
-                    navigationController?.pushViewController(quote3VC, animated: true)
+            navigationController?.pushViewController(quote3VC, animated: true)
         case 3:
             let quote4VC = Quote4ViewController()
-                    navigationController?.pushViewController(quote4VC, animated: true)
+            navigationController?.pushViewController(quote4VC, animated: true)
         case 4:
             let quote5VC = Quote5ViewController()
-                    navigationController?.pushViewController(quote5VC, animated: true)
+            navigationController?.pushViewController(quote5VC, animated: true)
         case 5:
             let quote6VC = Quote6ViewController()
-                    navigationController?.pushViewController(quote6VC, animated: true)
+            navigationController?.pushViewController(quote6VC, animated: true)
         case 6:
             let quote7VC = Quote7ViewController()
-                    navigationController?.pushViewController(quote7VC, animated: true)
+            navigationController?.pushViewController(quote7VC, animated: true)
         case 7:
             let quote8VC = Quote8ViewController()
-                    navigationController?.pushViewController(quote8VC, animated: true)
+            navigationController?.pushViewController(quote8VC, animated: true)
         case 8:
             let favoriteVC = FavoriteViewController()
-                    navigationController?.pushViewController(favoriteVC, animated: true)
+            navigationController?.pushViewController(favoriteVC, animated: true)
         default:
             break
         }
@@ -120,6 +120,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-         return 10.0 // 行間
+        return 10.0 // 行間
     }
 }
