@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// 7部名言生成画面
 class Quote7ViewController: UIViewController {
     
     // MARK: - IBOutlets

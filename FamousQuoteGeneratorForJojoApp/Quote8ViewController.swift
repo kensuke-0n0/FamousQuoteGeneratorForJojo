@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// 8部名言生成画面
 class Quote8ViewController: UIViewController {
     
     // MARK: - IBOutlets

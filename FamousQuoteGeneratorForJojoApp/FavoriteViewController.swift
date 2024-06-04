@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// お気に入り画面
 class FavoriteViewController: UIViewController {
 
     override func viewDidLoad() {

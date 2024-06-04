@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// 1部名言生成画面
 class Quote1ViewController: UIViewController {
     
     // MARK: - IBOutlets

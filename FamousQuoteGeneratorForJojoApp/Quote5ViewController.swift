@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// 5部名言生成画面
 class Quote5ViewController: UIViewController {
     
     // MARK: - IBOutlets

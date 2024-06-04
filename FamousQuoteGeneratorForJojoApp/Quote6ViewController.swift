@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// 6部名言生成画面
 class Quote6ViewController: UIViewController {
     
     // MARK: - IBOutlets

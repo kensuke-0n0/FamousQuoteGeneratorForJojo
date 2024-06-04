@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// 4部名言生成画面
 class Quote4ViewController: UIViewController {
     
     // MARK: - IBOutlets

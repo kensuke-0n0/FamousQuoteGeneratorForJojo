@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// 3部名言生成画面
 class Quote3ViewController: UIViewController {
     
     // MARK: - IBOutlets
