@@ -78,6 +78,11 @@ extension HomeViewController: UICollectionViewDelegate {
         default:
             break
         }
+        
+        // UICollectionViewの戻るボタンの色を変更する
+        if let navController = navigationController {
+            navController.navigationBar.tintColor = UIColor.black
+        }
     }
 }
 
