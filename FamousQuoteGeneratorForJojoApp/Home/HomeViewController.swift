@@ -95,7 +95,7 @@ extension HomeViewController: UICollectionViewDataSource {
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell",
                                                       for: indexPath)as! HomeCollectionViewCell
-        cell.imageView.image = UIImage(named: dataArray[indexPath.item])
+        cell.configure(imageString: dataArray[indexPath.item])
         return cell
     }
 }
