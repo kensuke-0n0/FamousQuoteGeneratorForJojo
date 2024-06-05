@@ -21,12 +21,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1部 ファントムブラッド" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzI-Hy-rRf">
-                    <rect key="frame" x="46" y="64" width="301" height="103"/>
+                    <rect key="frame" x="10" y="64" width="373" height="103"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="103" id="ZXB-a5-aSi"/>
-                        <constraint firstAttribute="width" constant="301" id="jAZ-2N-crO"/>
+                        <constraint firstAttribute="width" constant="373" id="lRf-kP-CyL"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -107,13 +107,13 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fzI-Hy-rRf" secondAttribute="trailing" constant="46" id="0js-vq-6we"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fzI-Hy-rRf" secondAttribute="trailing" constant="10" id="0js-vq-6we"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Edd-Z9-x2Y" secondAttribute="trailing" constant="157" id="0lF-nQ-aCM"/>
                 <constraint firstItem="lri-np-bns" firstAttribute="top" secondItem="Edd-Z9-x2Y" secondAttribute="bottom" constant="30" id="3xe-UL-vGA"/>
                 <constraint firstItem="eff-Tb-GY2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="HuC-bn-Vhj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lri-np-bns" secondAttribute="trailing" constant="112" id="QXV-iv-M9b"/>
                 <constraint firstItem="lri-np-bns" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="111" id="WvE-sH-nhq"/>
-                <constraint firstItem="fzI-Hy-rRf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="fcv-L5-YU4"/>
+                <constraint firstItem="fzI-Hy-rRf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="fcv-L5-YU4"/>
                 <constraint firstItem="eff-Tb-GY2" firstAttribute="top" secondItem="fzI-Hy-rRf" secondAttribute="bottom" constant="30" id="i78-eo-JfB"/>
                 <constraint firstItem="fzI-Hy-rRf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="rQZ-Cy-VMp"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eff-Tb-GY2" secondAttribute="trailing" constant="10" id="uJe-rk-Xz2"/>

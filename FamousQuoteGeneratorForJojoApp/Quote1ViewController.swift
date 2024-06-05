@@ -7,16 +7,15 @@
 
 import UIKit
 
+/// 1部名言生成画面
 class Quote1ViewController: UIViewController {
-    
-    // MARK: - Properties
     
     // MARK: - IBOutlets
     
     /// 名言を表示させるラベル
-    @IBOutlet weak var quoteLabel: UILabel!
+    @IBOutlet private weak var quoteLabel: UILabel!
     /// キャラクター名を表示させるラベル
-    @IBOutlet weak var characterLabel: UILabel!
+    @IBOutlet private weak var characterLabel: UILabel!
     
     // MARK: - View Life-Cycle Methods
     
@@ -31,10 +30,10 @@ class Quote1ViewController: UIViewController {
     
     // MARK: - IBActions
     
-    @IBAction func favoriteButton(_ sender: Any) {
+    @IBAction private func favoriteButton(_ sender: Any) {
     }
     
-    @IBAction func generateButton(_ sender: Any) {
+    @IBAction private func generateButton(_ sender: Any) {
         //ランダムに名言を設定
         if let randomQuote = QuotesData.quote1.randomElement() {
             quoteLabel.text = randomQuote.quote

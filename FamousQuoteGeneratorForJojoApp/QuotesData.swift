@@ -95,6 +95,75 @@ struct QuotesData {
     ]
     
     static let quote2 = [
+        Quote(quote: "師範代……\nあんたのしごきに対して\n礼をいうぜ……\nグラッツェ!ロギンス!",
+              characterName: "ジョセフ・ジョースター"),
+        Quote(quote: "ハッピー\nうれピー\nよろピくねぇ〜",
+              characterName: "ジョセフ・ジョースター"),
+        Quote(quote: "生き残るためには\n手段は選ばないもんネーー\nボクちゃん………\nルンルン",
+              characterName: "ジョセフ・ジョースター"),
+        Quote(quote: "この勝負…\nついてるネ\nのってるネ",
+              characterName: "ジョセフ・ジョースター"),
+        Quote(quote: "またまた\nやらせていただき\nましたァン!",
+              characterName: "ジョセフ・ジョースター"),
+        Quote(quote: "オー!\nノーッ\nおれの嫌いな言葉は\n一番が「努力」で\n二番目が「ガンバル」\nなんだぜーッ",
+              characterName: "ジョセフ・ジョースター"),
+        Quote(quote: "逃げるんだよォォォーーーーッ",
+              characterName: "ジョセフ・ジョースター"),
+        Quote(quote: "そうさ!\nワムウ!\n戦いは　戦いで別\nシーザーの死の\n悲しみは悲しみで別……\nおれも　なぜか\nあんたに対して\n敬意をはらいたく\nなったのさ………",
+              characterName: "ジョセフ・ジョースター"),
+        Quote(quote: "タコス",
+              characterName: "ドイツ軍人"),
+        Quote(quote: "ウィン\nウィン\nウィン\nウィン\nウィン",
+              characterName: "カーズ"),
+        Quote(quote: "ワムウ!\nやつは戦闘者として\nあまりにも純粋すぎた!\nそれが弱さに\nつながったのだ!!",
+              characterName: "カーズ"),
+        Quote(quote: "勝てばよかろうなのだァァァァッ!!",
+              characterName: "カーズ"),
+        Quote(quote: "しかし\nその無惨なる姿!\n美しいぞ!",
+              characterName: "カーズ"),
+        Quote(quote: "先生も知るように\nおれの決闘の問題だ!\nツェペリ一族の\n問題なのです",
+              characterName: "シーザー・A・ツェペリ"),
+        Quote(quote: "おれが最後に\nみせるのは\n代代受け継いだ\n未来にたくす\nツェペリ魂だ!\n人間の魂だ!",
+              characterName: "シーザー・A・ツェペリ"),
+        Quote(quote: "老いた今!\nなにものをも\n超えた生き物と\nなりたいと願う!",
+              characterName: "ストレイツォ"),
+        Quote(quote: "HEEEEYYYY\nあアアァんまり\nだアアアア",
+              characterName: "エシディシ"),
+        Quote(quote: "や…やつは「神」に\nなったんだ…!\n我われ…人間は\nか…「神」にだけは\n勝てない!\n服従しかないんだ!",
+              characterName: "シュトロハイム"),
+        Quote(quote: "それで\nおれの脚を\n断て!",
+              characterName: "シュトロハイム"),
+        Quote(quote: "そして　死にたいと思っても死ねないので|nーそのうちカーズは　考えるのをやめた。",
+              characterName: "ナレーション"),
+        Quote(quote: "おれの前で\n決闘を侮辱するな!\nJOJO!",
+              characterName: "ワムウ"),
+        Quote(quote: "おれにとって\n強い戦士こそ真理………\n尊敬する者!!\nシャボン玉のように\n華麗ではかなき男よ",
+              characterName: "ワムウ"),
+        Quote(quote: "人間の寿命は\nどうせ短い\n死にいそぐ\n必要もなかろう",
+              characterName: "ワムウ"),
+    ]
+    
+    static let quote3 = [
+        Quote(quote: "", characterName: "")
+    ]
+    
+    static let quote4 = [
+        Quote(quote: "", characterName: "")
+    ]
+    
+    static let quote5 = [
+        Quote(quote: "", characterName: "")
+    ]
+    
+    static let quote6 = [
+        Quote(quote: "", characterName: "")
+    ]
+    
+    static let quote7 = [
+        Quote(quote: "", characterName: "")
+    ]
+    
+    static let quote8 = [
         Quote(quote: "", characterName: "")
     ]
 }
