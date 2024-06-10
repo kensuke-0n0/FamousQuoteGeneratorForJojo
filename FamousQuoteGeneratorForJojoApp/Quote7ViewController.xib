@@ -39,7 +39,7 @@
                                 <constraint firstAttribute="width" constant="357" id="9w8-bH-NNx"/>
                                 <constraint firstAttribute="height" constant="210" id="oLL-Hs-yFS"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -49,7 +49,7 @@
                                 <constraint firstAttribute="height" constant="54" id="CYt-BN-yjQ"/>
                                 <constraint firstAttribute="width" constant="357" id="jbo-xZ-Nsy"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
