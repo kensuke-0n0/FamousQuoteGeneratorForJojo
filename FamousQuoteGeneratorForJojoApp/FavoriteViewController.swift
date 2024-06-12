@@ -28,6 +28,9 @@ class FavoriteViewController: UIViewController {
     private func configureTableView() {
         tableView.dataSource = self
         tableView.delegate = self
+        // セクションヘッダー
+        let sectionNib = UINib(nibName: "FavoriteHeaderView", bundle: nil)
+        tableView.register(sectionNib, forHeaderFooterViewReuseIdentifier:"FavoriteHeaderView")
         // カスタムセル
         let nib = UINib(nibName: "FavoriteTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "Cell")
@@ -37,6 +40,16 @@ class FavoriteViewController: UIViewController {
 // MARK: - UITableViewDataSource
 
 extension FavoriteViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "FavoriteHeaderView") as? FavoriteHeaderView else { return nil }
+        headerView.configure(number: 1, backgroundColor: .red)
+        return headerView
+        
+    }
     /// データの数（＝セルの数）を返すメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3

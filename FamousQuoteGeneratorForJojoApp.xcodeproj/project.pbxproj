@@ -10,6 +10,8 @@
 		8B6A394B2C060A150064959E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B6A394A2C060A150064959E /* HomeViewController.xib */; };
 		AF7081FB2C19CAA6003B7BBB /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7081F92C19CAA6003B7BBB /* FavoriteTableViewCell.swift */; };
 		AF7081FC2C19CAA6003B7BBB /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF7081FA2C19CAA6003B7BBB /* FavoriteTableViewCell.xib */; };
+		AF7081FE2C19DEF4003B7BBB /* FavoriteHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7081FD2C19DEF4003B7BBB /* FavoriteHeaderView.swift */; };
+		AF7082002C19DF1E003B7BBB /* FavoriteHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF7081FF2C19DF1E003B7BBB /* FavoriteHeaderView.xib */; };
 		AF8657CF2BFCBD9F0025C341 /* Quote1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8657CD2BFCBD9F0025C341 /* Quote1ViewController.swift */; };
 		AF8657D02BFCBD9F0025C341 /* Quote1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8657CE2BFCBD9F0025C341 /* Quote1ViewController.xib */; };
 		AF8657D32BFCBE0F0025C341 /* Quote2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8657D12BFCBE0F0025C341 /* Quote2ViewController.swift */; };
@@ -43,6 +45,8 @@
 		8B6A394A2C060A150064959E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		AF7081F92C19CAA6003B7BBB /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		AF7081FA2C19CAA6003B7BBB /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
+		AF7081FD2C19DEF4003B7BBB /* FavoriteHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteHeaderView.swift; sourceTree = "<group>"; };
+		AF7081FF2C19DF1E003B7BBB /* FavoriteHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteHeaderView.xib; sourceTree = "<group>"; };
 		AF8657CD2BFCBD9F0025C341 /* Quote1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote1ViewController.swift; sourceTree = "<group>"; };
 		AF8657CE2BFCBD9F0025C341 /* Quote1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Quote1ViewController.xib; sourceTree = "<group>"; };
 		AF8657D12BFCBE0F0025C341 /* Quote2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote2ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				AF8657EE2BFCBF240025C341 /* FavoriteViewController.xib */,
 				AF7081F92C19CAA6003B7BBB /* FavoriteTableViewCell.swift */,
 				AF7081FA2C19CAA6003B7BBB /* FavoriteTableViewCell.xib */,
+				AF7081FD2C19DEF4003B7BBB /* FavoriteHeaderView.swift */,
+				AF7081FF2C19DF1E003B7BBB /* FavoriteHeaderView.xib */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -224,6 +230,7 @@
 				AF8657E82BFCBE8B0025C341 /* Quote7ViewController.xib in Resources */,
 				AFC3B9F12BF112CB005FCD37 /* Assets.xcassets in Resources */,
 				AF8657E42BFCBE750025C341 /* Quote6ViewController.xib in Resources */,
+				AF7082002C19DF1E003B7BBB /* FavoriteHeaderView.xib in Resources */,
 				AF8657E02BFCBE5B0025C341 /* Quote5ViewController.xib in Resources */,
 				AF8657EC2BFCBEAA0025C341 /* Quote8ViewController.xib in Resources */,
 				AF8657D82BFCBE2A0025C341 /* Quote3ViewController.xib in Resources */,
@@ -237,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7081FE2C19DEF4003B7BBB /* FavoriteHeaderView.swift in Sources */,
 				AF8657D72BFCBE2A0025C341 /* Quote3ViewController.swift in Sources */,
 				AF8657DF2BFCBE5B0025C341 /* Quote5ViewController.swift in Sources */,
 				AFC33D822C0A1D13003B0E82 /* UIColorExtension.swift in Sources */,
