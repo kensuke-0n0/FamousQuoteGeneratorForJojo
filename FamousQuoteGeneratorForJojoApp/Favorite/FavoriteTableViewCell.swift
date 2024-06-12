@@ -8,16 +8,21 @@
 import UIKit
 
 class FavoriteTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
+    // MARK: - Outlets
+    
+    /// 名言のLabel
+    @IBOutlet private weak var quoteLabel: UILabel!
+    /// 部数のLabel
+    @IBOutlet private weak var partLabel: UILabel!
+    /// キャラクター名のLabel
+    @IBOutlet private weak var characterLabel: UILabel!
+    
+    // MARK: - Other Methods
+
+    func configure(quote: String, part: String, character: String) {
+        quoteLabel.text = quote
+        partLabel.text = part
+        characterLabel.text = character
+    }
 }
