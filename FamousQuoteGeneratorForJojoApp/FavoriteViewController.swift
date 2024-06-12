@@ -28,9 +28,7 @@ class FavoriteViewController: UIViewController {
     private func configureTableView() {
         tableView.dataSource = self
         tableView.delegate = self
-        // セクションヘッダー
-        let sectionNib = UINib(nibName: "FavoriteHeaderView", bundle: nil)
-        tableView.register(sectionNib, forHeaderFooterViewReuseIdentifier:"FavoriteHeaderView")
+
         // カスタムセル
         let nib = UINib(nibName: "FavoriteTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "Cell")
@@ -40,12 +38,14 @@ class FavoriteViewController: UIViewController {
 // MARK: - UITableViewDataSource
 
 extension FavoriteViewController: UITableViewDataSource {
+    /// セクションの数
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
     
+    /// セクションヘッダービューを設定
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "FavoriteHeaderView") as? FavoriteHeaderView else { return nil }
+        let headerView = FavoriteHeaderView()
         headerView.configure(number: 1, backgroundColor: .red)
         return headerView
         
@@ -67,6 +67,11 @@ extension FavoriteViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 
 extension FavoriteViewController: UITableViewDelegate {
+    /// セクションヘッダーの高さ
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 48.0
+    }
+    
     /// セルの高さを設定するメソッド
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
