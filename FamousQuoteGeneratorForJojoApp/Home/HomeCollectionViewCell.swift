@@ -15,6 +15,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
     func configure(imageString: String) {
         imageView.image = UIImage(named: imageString)
     }
