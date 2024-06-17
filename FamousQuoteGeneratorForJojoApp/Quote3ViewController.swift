@@ -30,10 +30,10 @@ class Quote3ViewController: UIViewController {
     
     // MARK: - IBActions
     
-    @IBAction private func favoriteButton(_ sender: Any) {
+    @IBAction private func didTapFavoriteButton(_ sender: Any) {
     }
     
-    @IBAction private func generateButton(_ sender: Any) {
+    @IBAction private func didTapGenerateButton(_ sender: Any) {
         //ランダムに名言を設定
         if let randomQuote = QuotesData.quote3.randomElement() {
             quoteLabel.text = randomQuote.quote

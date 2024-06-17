@@ -81,7 +81,7 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" image="favorite_button"/>
                     <connections>
-                        <action selector="favoriteButton:" destination="-1" eventType="touchUpInside" id="APN-0X-ys2"/>
+                        <action selector="didTapFavoriteButton:" destination="-1" eventType="touchUpInside" id="APN-0X-ys2"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sv9-aJ-lRr">
@@ -101,7 +101,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <action selector="generateButton:" destination="-1" eventType="touchUpInside" id="p1q-W5-KMQ"/>
+                        <action selector="didTapGenerateButton:" destination="-1" eventType="touchUpInside" id="p1q-W5-KMQ"/>
                     </connections>
                 </button>
             </subviews>

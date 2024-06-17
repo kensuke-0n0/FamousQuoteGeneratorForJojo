@@ -81,7 +81,7 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" image="favorite_button"/>
                     <connections>
-                        <action selector="favoriteButton:" destination="-1" eventType="touchUpInside" id="W2m-Az-Dwk"/>
+                        <action selector="didTapFavoriteButton:" destination="-1" eventType="touchUpInside" id="W2m-Az-Dwk"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evj-nM-vOn">
@@ -101,7 +101,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <action selector="generateButton:" destination="-1" eventType="touchUpInside" id="DFl-1A-dmW"/>
+                        <action selector="didTapGenerateButton:" destination="-1" eventType="touchUpInside" id="DFl-1A-dmW"/>
                     </connections>
                 </button>
             </subviews>

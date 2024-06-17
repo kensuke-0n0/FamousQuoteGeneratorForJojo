@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35E119151CAE5E9D7F7408A4 /* Pods_FamousQuoteGeneratorForJojoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AEC75793FDAF930302664D7 /* Pods_FamousQuoteGeneratorForJojoApp.framework */; };
 		8B6A394B2C060A150064959E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B6A394A2C060A150064959E /* HomeViewController.xib */; };
+		AF3C39602C1C7BAC0040A2CA /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3C395F2C1C7BAC0040A2CA /* RealmManager.swift */; };
+		AF6A4B5B2C1C2C72003FB188 /* QuoteDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A4B5A2C1C2C72003FB188 /* QuoteDataModel.swift */; };
 		AF7081FB2C19CAA6003B7BBB /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7081F92C19CAA6003B7BBB /* FavoriteTableViewCell.swift */; };
 		AF7081FC2C19CAA6003B7BBB /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF7081FA2C19CAA6003B7BBB /* FavoriteTableViewCell.xib */; };
 		AF7081FE2C19DEF4003B7BBB /* FavoriteHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7081FD2C19DEF4003B7BBB /* FavoriteHeaderView.swift */; };
@@ -42,7 +45,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7AEC75793FDAF930302664D7 /* Pods_FamousQuoteGeneratorForJojoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FamousQuoteGeneratorForJojoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6A394A2C060A150064959E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		9714DE312629FD796F0E4875 /* Pods-FamousQuoteGeneratorForJojoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FamousQuoteGeneratorForJojoApp.debug.xcconfig"; path = "Target Support Files/Pods-FamousQuoteGeneratorForJojoApp/Pods-FamousQuoteGeneratorForJojoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AD102EAD9CA9C79DFC5EA314 /* Pods-FamousQuoteGeneratorForJojoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FamousQuoteGeneratorForJojoApp.release.xcconfig"; path = "Target Support Files/Pods-FamousQuoteGeneratorForJojoApp/Pods-FamousQuoteGeneratorForJojoApp.release.xcconfig"; sourceTree = "<group>"; };
+		AF3C395F2C1C7BAC0040A2CA /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		AF6A4B5A2C1C2C72003FB188 /* QuoteDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDataModel.swift; sourceTree = "<group>"; };
 		AF7081F92C19CAA6003B7BBB /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		AF7081FA2C19CAA6003B7BBB /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
 		AF7081FD2C19DEF4003B7BBB /* FavoriteHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteHeaderView.swift; sourceTree = "<group>"; };
@@ -83,12 +91,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35E119151CAE5E9D7F7408A4 /* Pods_FamousQuoteGeneratorForJojoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02FA89CEB8187796B1A12A4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AEC75793FDAF930302664D7 /* Pods_FamousQuoteGeneratorForJojoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8B6A394C2C0613C70064959E /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +135,8 @@
 			children = (
 				AFC3B9E62BF112C8005FCD37 /* FamousQuoteGeneratorForJojoApp */,
 				AFC3B9E52BF112C8005FCD37 /* Products */,
+				F1571CFD593961D210E55A88 /* Pods */,
+				02FA89CEB8187796B1A12A4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,8 +176,19 @@
 				AF7081F42C18AAC3003B7BBB /* Favorite */,
 				AFAA04842C02F03C00AD9F74 /* QuotesData.swift */,
 				AFC33D812C0A1D13003B0E82 /* UIColorExtension.swift */,
+				AF6A4B5A2C1C2C72003FB188 /* QuoteDataModel.swift */,
+				AF3C395F2C1C7BAC0040A2CA /* RealmManager.swift */,
 			);
 			path = FamousQuoteGeneratorForJojoApp;
+			sourceTree = "<group>";
+		};
+		F1571CFD593961D210E55A88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9714DE312629FD796F0E4875 /* Pods-FamousQuoteGeneratorForJojoApp.debug.xcconfig */,
+				AD102EAD9CA9C79DFC5EA314 /* Pods-FamousQuoteGeneratorForJojoApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFC3B9F82BF112CB005FCD37 /* Build configuration list for PBXNativeTarget "FamousQuoteGeneratorForJojoApp" */;
 			buildPhases = (
+				7B802A791B41B95FC128ED07 /* [CP] Check Pods Manifest.lock */,
 				AFC3B9E02BF112C8005FCD37 /* Sources */,
 				AFC3B9E12BF112C8005FCD37 /* Frameworks */,
 				AFC3B9E22BF112C8005FCD37 /* Resources */,
+				F5106115F5C861F8FD04F1EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +271,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B802A791B41B95FC128ED07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FamousQuoteGeneratorForJojoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5106115F5C861F8FD04F1EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FamousQuoteGeneratorForJojoApp/Pods-FamousQuoteGeneratorForJojoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FamousQuoteGeneratorForJojoApp/Pods-FamousQuoteGeneratorForJojoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FamousQuoteGeneratorForJojoApp/Pods-FamousQuoteGeneratorForJojoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AFC3B9E02BF112C8005FCD37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -254,6 +328,8 @@
 				AF8657E32BFCBE750025C341 /* Quote6ViewController.swift in Sources */,
 				AF8657D32BFCBE0F0025C341 /* Quote2ViewController.swift in Sources */,
 				AF8657EB2BFCBEAA0025C341 /* Quote8ViewController.swift in Sources */,
+				AF6A4B5B2C1C2C72003FB188 /* QuoteDataModel.swift in Sources */,
+				AF3C39602C1C7BAC0040A2CA /* RealmManager.swift in Sources */,
 				AF7081FB2C19CAA6003B7BBB /* FavoriteTableViewCell.swift in Sources */,
 				AFC3B9E82BF112C8005FCD37 /* AppDelegate.swift in Sources */,
 				AFC3B9EA2BF112C8005FCD37 /* SceneDelegate.swift in Sources */,
@@ -315,7 +391,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -378,7 +454,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -399,6 +475,7 @@
 		};
 		AFC3B9F92BF112CB005FCD37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9714DE312629FD796F0E4875 /* Pods-FamousQuoteGeneratorForJojoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -426,6 +503,7 @@
 		};
 		AFC3B9FA2BF112CB005FCD37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD102EAD9CA9C79DFC5EA314 /* Pods-FamousQuoteGeneratorForJojoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
