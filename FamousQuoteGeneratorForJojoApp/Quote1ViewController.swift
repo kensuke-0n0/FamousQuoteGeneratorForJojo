@@ -47,7 +47,7 @@ class Quote1ViewController: UIViewController {
     }
     
     @IBAction private func didTapGenerateButton(_ sender: Any) {
-        //ランダムに名言を設定
+        // ランダムに名言を設定
         if let randomQuote = QuotesData.quote1.randomElement() {
             quoteLabel.text = randomQuote.quote
             characterLabel.text = randomQuote.characterName
