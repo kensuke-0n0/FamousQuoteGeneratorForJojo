@@ -72,6 +72,11 @@
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="characterLabel" destination="VWk-ww-UpW" id="12z-tJ-jUy"/>
+                <outlet property="partLabel" destination="Iyb-at-piy" id="z3B-qJ-58O"/>
+                <outlet property="quoteLabel" destination="1zA-ri-LmI" id="Hqn-gH-nFs"/>
+            </connections>
             <point key="canvasLocation" x="189" y="75"/>
         </tableViewCell>
     </objects>
