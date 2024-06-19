@@ -268,7 +268,7 @@ struct QuotesData {
         Quote(quote: "人間の魂というものは\n実に不思議だ\n「敗北」する時!\n自分の「敗北」を\n自分で認めた瞬間\n魂のエネルギーは\n限りなく0に近くなる\n………",
               characterName: "テレンス・T・ダービー"),
         Quote(quote: "触れてはいけない\n物というのは\n触れてしまいたく\nなるものね",
-              characterName: "マライや"),
+              characterName: "マライヤ"),
         Quote(quote: "『死ぬのはこわくない\nしかしあの人に　見捨てられ\n殺されるのだけはいやだ』\n悪には悪の救世主が\n必要なんだよ\nフフフフ",
               characterName: "ンドゥール"),
         Quote(quote: "チュミミ〜ン",

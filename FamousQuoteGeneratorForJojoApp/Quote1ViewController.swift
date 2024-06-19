@@ -14,7 +14,8 @@ class Quote1ViewController: UIViewController {
     
     var quote: String = ""
     var characterName: String = ""
-    
+    /// 保存済みかどうか
+    var isSaved: Bool = false
     /// RealmManagerのシングルトンインスタンスを取得
     let realmManager = RealmManager.shared
     
@@ -41,19 +42,23 @@ class Quote1ViewController: UIViewController {
     @IBAction private func didTapFavoriteButton(_ sender: Any) {
         if quote.isEmpty, characterName.isEmpty {
             showAlert(title: "名言を生成してください")
+        } else if isSaved {
+            showAlert(title: "新しい名言を生成してください")
         } else {
             saveData()
+            isSaved = true
         }
     }
     
     @IBAction private func didTapGenerateButton(_ sender: Any) {
-        //ランダムに名言を設定
+        // ランダムに名言を設定
         if let randomQuote = QuotesData.quote1.randomElement() {
             quoteLabel.text = randomQuote.quote
             characterLabel.text = randomQuote.characterName
             quote = randomQuote.quote
             characterName = randomQuote.characterName
         }
+        isSaved = false
     }
     
     // MARK: - Other Methods
