@@ -138,6 +138,7 @@ extension FavoriteViewController: UITableViewDataSource {
             })
         }
     }
+    
     /// アラートを表示
     func showAlert() {
         let alert = UIAlertController(title: "エラーが発生しました",
