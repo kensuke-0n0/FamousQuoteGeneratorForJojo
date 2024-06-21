@@ -119,23 +119,25 @@ extension FavoriteViewController: UITableViewDataSource {
             let quoteToDelete = groupedQuotes[sectionIndex][indexPath.row]
             
             // Realmから削除
-            realmManager.delete(quoteToDelete, onSuccess: {
-                // 配列から削除
-                self.groupedQuotes[sectionIndex].remove(at: indexPath.row)
-                
-                // セクションが空になったら表示セクションからも削除
-                if self.groupedQuotes[sectionIndex].isEmpty {
-                    self.displayedSections.remove(at: indexPath.section)
-                    tableView.deleteSections([indexPath.section], with: .automatic)
-                } else {
-                    tableView.deleteRows(at: [indexPath], with: .automatic)
-                }
-                
-            }, onFailure: { error in
-                // エラー処理
-                print("Failed to delete object from Realm: \(error)")
-                self.showAlert()
-            })
+            realmManager.delete(
+                quoteToDelete,
+                onSuccess: {
+                    // 配列から削除
+                    self.groupedQuotes[sectionIndex].remove(at: indexPath.row)
+                    
+                    // セクションが空になったら表示セクションからも削除
+                    if self.groupedQuotes[sectionIndex].isEmpty {
+                        self.displayedSections.remove(at: indexPath.section)
+                        tableView.deleteSections([indexPath.section], with: .automatic)
+                    } else {
+                        tableView.deleteRows(at: [indexPath], with: .automatic)
+                    }
+                    
+                }, onFailure: { error in
+                    // エラー処理
+                    print("Failed to delete object from Realm: \(error)")
+                    self.showAlert()
+                })
         }
     }
     
