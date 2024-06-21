@@ -55,9 +55,12 @@ class FavoriteViewController: UIViewController {
             let sectionIndex = quote.part - 1
             if sectionIndex >= 0 && sectionIndex < groupedQuotes.count {
                 groupedQuotes[sectionIndex].append(quote)
+                if !displayedSections.contains(sectionIndex) {
+                    displayedSections.append(sectionIndex)
+                }
             }
-            self.displayedSections.append(sectionIndex)
         }
+        displayedSections.sort()  // セクションをソートして順序を保つ
         tableView.reloadData()
     }
 }
@@ -67,81 +70,84 @@ class FavoriteViewController: UIViewController {
 extension FavoriteViewController: UITableViewDataSource {
     /// セクションの数
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 8
+        return displayedSections.count
     }
     
     /// セクションヘッダービューを設定
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = FavoriteHeaderView()
-        switch section {
-        case 0:
-            if displayedSections.contains(0) {
-                headerView.configure(number: 1, backgroundColor: UIColor(hex: "#08CF79"))
-            } else {
-                headerView.isHidden = true
-            }
-        case 1:
-            if displayedSections.contains(1) {
-                headerView.configure(number: 2, backgroundColor: UIColor(hex: "#57FF03"))
-            } else {
-                headerView.isHidden = true
-            }
-        case 2:
-            if displayedSections.contains(2) {
-                headerView.configure(number: 3, backgroundColor: UIColor(hex: "#0080FF"))
-            } else {
-                headerView.isHidden = true
-            }
-        case 3:
-            if displayedSections.contains(3) {
-                headerView.configure(number: 4, backgroundColor: UIColor(hex: "#B266FF"))
-            } else {
-                headerView.isHidden = true
-            }
-        case 4:
-            if displayedSections.contains(4) {
-                headerView.configure(number: 5, backgroundColor: UIColor(hex: "#FFFF99"))
-            } else {
-                headerView.isHidden = true
-            }
-        case 5:
-            if displayedSections.contains(5) {
-                headerView.configure(number: 6, backgroundColor: UIColor(hex: "#87EBFF"))
-            } else {
-                headerView.isHidden = true
-            }
-        case 6:
-            if displayedSections.contains(6) {
-                headerView.configure(number: 7, backgroundColor: UIColor(hex: "#FFCC99"))
-            } else {
-                headerView.isHidden = true
-            }
-        case 7:
-            if displayedSections.contains(7) {
-                headerView.configure(number: 8, backgroundColor: UIColor(hex: "#E6E6E6"))
-            } else {
-                headerView.isHidden = true
-            }
-        default:
-            break
+        let sectionIndex = displayedSections[section]
+        let backgroundColors = [
+            UIColor(hex: "#08CF79"),
+            UIColor(hex: "#57FF03"),
+            UIColor(hex: "#0080FF"),
+            UIColor(hex: "#B266FF"),
+            UIColor(hex: "#FFFF99"),
+            UIColor(hex: "#87EBFF"),
+            UIColor(hex: "#FFCC99"),
+            UIColor(hex: "#E6E6E6")
+        ]
+        
+        if sectionIndex >= 0 && sectionIndex < backgroundColors.count {
+            headerView.configure(number: sectionIndex + 1, backgroundColor: backgroundColors[sectionIndex])
+        } else {
+            headerView.isHidden = true
         }
+        
         return headerView
     }
+    
     /// データの数（＝セルの数）を返すメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return groupedQuotes[section].count
+        let sectionIndex = displayedSections[section]
+        return groupedQuotes[sectionIndex].count
     }
     
     /// 各セルの内容を返すメソッド
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // 再利用可能な cell を得る
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)as! FavoriteTableViewCell
-        // ここにセルに渡す処理を書く
-        let quote = groupedQuotes[indexPath.section][indexPath.row]
-        cell.configure(quote: quote.quote,
-                       part: "\(quote.part)部",
-                       character: quote.characterName)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FavoriteTableViewCell
+        let sectionIndex = displayedSections[indexPath.section]
+        let quote = groupedQuotes[sectionIndex][indexPath.row]
+        cell.configure(quote: quote.quote, part: "\(quote.part)部", character: quote.characterName)
         return cell
+    }
+    
+    // セルをスワイプして削除するためのメソッド
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let sectionIndex = displayedSections[indexPath.section]
+            let quoteToDelete = groupedQuotes[sectionIndex][indexPath.row]
+            
+            // Realmから削除
+            realmManager.delete(
+                quoteToDelete,
+                onSuccess: {
+                    // 配列から削除
+                    self.groupedQuotes[sectionIndex].remove(at: indexPath.row)
+                    
+                    // セクションが空になったら表示セクションからも削除
+                    if self.groupedQuotes[sectionIndex].isEmpty {
+                        self.displayedSections.remove(at: indexPath.section)
+                        tableView.deleteSections([indexPath.section], with: .automatic)
+                    } else {
+                        tableView.deleteRows(at: [indexPath], with: .automatic)
+                    }
+                    
+                }, onFailure: { error in
+                    // エラー処理
+                    print("Failed to delete object from Realm: \(error)")
+                    self.showAlert()
+                })
+        }
+    }
+    
+    /// アラートを表示
+    private func showAlert() {
+        let alert = UIAlertController(title: "エラーが発生しました",
+                                      message: "",
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
