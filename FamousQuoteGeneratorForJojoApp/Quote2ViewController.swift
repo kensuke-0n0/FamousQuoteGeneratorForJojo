@@ -34,6 +34,10 @@ class Quote2ViewController: UIViewController {
         if QuotesData.quote2.first != nil {
             quoteLabel.text = "名言生成ッ!!をタップ"
             characterLabel.text = ""}
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         configureGradientView(view: self.view)
     }
     
